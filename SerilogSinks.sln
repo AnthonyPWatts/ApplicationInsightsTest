@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationInsightsTest.Website", "ApplicationInsightsTest.Website\ApplicationInsightsTest.Website.csproj", "{719EE013-33EC-44CB-8D26-F3E8E7D96F1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogSinks.Website", "SerilogSinks.Website\SerilogSinks.Website.csproj", "{719EE013-33EC-44CB-8D26-F3E8E7D96F1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

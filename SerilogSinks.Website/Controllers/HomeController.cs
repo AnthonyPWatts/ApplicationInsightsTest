@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using ApplicationInsightsTest.Website.Models;
+using SerilogSinks.Website.Models;
 
-namespace ApplicationInsightsTest.Website.Controllers
+namespace SerilogSinks.Website.Controllers
 {
     public class HomeController : Controller
     {

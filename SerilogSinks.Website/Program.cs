@@ -8,7 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
 
-namespace ApplicationInsightsTest.Website
+namespace SerilogSinks.Website
 {
     public class Program
     {
@@ -34,16 +34,16 @@ namespace ApplicationInsightsTest.Website
 
             try
             {
-                Log.Information("ApplicationInsightsTest.Website starting up.");
+                Log.Information("SerilogSinks.Website starting up.");
                 CreateHostBuilder(args).Build().Run();
             }
             catch (Exception ex)
             {
-                Log.Fatal(ex, "ApplicationInsightsTest.Website failed.");
+                Log.Fatal(ex, "SerilogSinks.Website failed.");
             }
             finally
             {
-                Log.Information("ApplicationInsightsTest.Website shutting down.");
+                Log.Information("SerilogSinks.Website shutting down.");
                 Log.CloseAndFlush();
             }
         }

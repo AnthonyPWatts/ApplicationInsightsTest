@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ApplicationInsightsTest.Website.Controllers
+namespace SerilogSinks.Website.Controllers
 {
     [ApiController]
     [Route("MyApi")]

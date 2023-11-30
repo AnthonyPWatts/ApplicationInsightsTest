@@ -1,6 +1,6 @@
 using System;
 
-namespace ApplicationInsightsTest.Website.Models
+namespace SerilogSinks.Website.Models
 {
     public class ErrorViewModel
     {

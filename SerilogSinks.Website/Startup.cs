@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
-namespace ApplicationInsightsTest.Website
+namespace SerilogSinks.Website
 {
     public class Startup
     {
@@ -32,8 +32,8 @@ namespace ApplicationInsightsTest.Website
 
             services.AddSwaggerGen(c =>
             {
-                c.IncludeXmlComments($@"{AppDomain.CurrentDomain.BaseDirectory}\ApplicationInsightsTest.Website.xml");
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApplicationInsightsTest.WebsiteAPI", Version = "v1" });
+                c.IncludeXmlComments($@"{AppDomain.CurrentDomain.BaseDirectory}\SerilogSinks.Website.xml");
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SerilogSinks.WebsiteAPI", Version = "v1" });
             });
 
             #endregion
@@ -76,7 +76,7 @@ namespace ApplicationInsightsTest.Website
             #region Swagger
             
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("v1/swagger.json", "ApplicationInsightsTest.Website API v1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("v1/swagger.json", "SerilogSinks.Website API v1"));
 
             #endregion
             

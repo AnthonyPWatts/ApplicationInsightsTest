@@ -12,11 +12,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DocumentationFile>bin\Debug\ApplicationInsightsTest.Website.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\SerilogSinks.Website.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DocumentationFile>bin\Release\ApplicationInsightsTest.Website.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\SerilogSinks.Website.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
