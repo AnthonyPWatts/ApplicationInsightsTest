@@ -1,0 +1,1 @@
+# ApplicationInsightsTest
