@@ -1,11 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Serilog;
 
 namespace SerilogSinks.Website
@@ -34,7 +30,7 @@ namespace SerilogSinks.Website
 
             try
             {
-                Log.Information("SerilogSinks.Website starting up.");
+                Log.Information("SerilogSinks.Website starting up. (Manual log: not from Serilog middleware)");
                 CreateHostBuilder(args).Build().Run();
             }
             catch (Exception ex)

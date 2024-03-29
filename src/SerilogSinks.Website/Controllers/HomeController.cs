@@ -20,9 +20,15 @@ namespace SerilogSinks.Website.Controllers
         
         public IActionResult Index()
         {
-            _logger.LogInformation("Home/Index navigation log.");
             return View();
         }
+
+        public IActionResult Index2()
+        {
+            _logger.LogInformation("Home/Index2 navigated to. (Manual log: not from Serilog middleware)");
+            return View("Index");
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
